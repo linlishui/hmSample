@@ -1,0 +1,38 @@
+{
+  "module": {
+    "name": "components",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "SampleAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "SampleAbility",
+        "srcEntry": "./ets/sampleability/SampleAbility.ets",
+        "description": "$string:SampleAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:SampleAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.app.sample"
+            ],
+            "actions": [
+              "action.app.sample"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
